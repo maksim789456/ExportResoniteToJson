@@ -1,22 +1,22 @@
-using BaseX;
 using FrooxEngine;
 using HarmonyLib;
-using NeosModLoader;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
+using Elements.Core;
+using Newtonsoft.Json;
+using ResoniteModLoader;
 
 namespace ExportNeosToJson
 {
-    public class ExportNeosToJson : NeosMod
+    public class ExportNeosToJson : ResoniteMod
     {
         public override string Name => "ExportNeosToJson";
         public override string Author => "runtime";
-        public override string Version => "1.1.1";
+        public override string Version => "2.1.1";
         public override string Link => "https://github.com/zkxs/ExportNeosToJson";
-
 
         public override void OnEngineInit()
         {
