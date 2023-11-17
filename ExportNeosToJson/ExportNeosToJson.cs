@@ -15,7 +15,7 @@ namespace ExportNeosToJson
     {
         public override string Name => "ExportNeosToJson";
         public override string Author => "runtime";
-        public override string Version => "2.1.1";
+        public override string Version => "2.1.2";
         public override string Link => "https://github.com/zkxs/ExportNeosToJson";
 
         public override void OnEngineInit()
