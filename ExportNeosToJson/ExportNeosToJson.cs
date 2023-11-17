@@ -53,6 +53,7 @@ namespace ExportNeosToJson
             MethodInfo exportModelPrefix =
                 AccessTools.DeclaredMethod(typeof(ExportNeosToJson), nameof(ExportModelPrefix));
             harmony.Patch(exportModelOriginal, prefix: new HarmonyMethod(exportModelPrefix));
+            harmony.PatchAll();
 
             Msg("Hook installed successfully");
         }
